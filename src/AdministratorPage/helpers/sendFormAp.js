@@ -7,7 +7,7 @@ import {idElement} from "../Data/ToEvalue.js"
 import {UserPrice} from "../Data/ToEvalue.js"
 
 import { toShowData } from "./functionsToAddProducts/toShowData.js";
-
+import { getDeleteButonAP } from "../helpers/functionsToDeleteData/deleteDataButton.js";
 
 export function sendFormAp(){
 
@@ -35,8 +35,11 @@ export function sendFormAp(){
         newProducts.push(new Products(UserPicture, idElement.value, selectGarment, UserSize, UserPrice.value))
         sentForm.className="animationSent"
         sentForm.innerHTML='<span class="checkSimbolSubmit">✔️</span>'
-        
+
         toShowData()
+
+        getDeleteButonAP()
+    
        
     }
    

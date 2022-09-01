@@ -1,6 +1,6 @@
-
+//Esta funcion crea el contenido y administra lo que se mostrará o no.
 export function toCreateContainersData(...dataOfProducts){
-    console.log(dataOfProducts)
+  
     const forAlingDataProductsAP=document.querySelector("#alingDataProductsAP")
 
 
@@ -10,7 +10,7 @@ export function toCreateContainersData(...dataOfProducts){
     const dataProductsAP=document.createElement("div")
     dataProductsAP.className="dataProductsAP"
     dataProductsAP.innerHTML=`
-        <span>${dataOfProducts[0]}</span>
+        <span class="idOfProductsAP" >${dataOfProducts[0]}</span>
         <span>${dataOfProducts[1]}</span>
         <span>${dataOfProducts[2]}</span>
         <span>${dataOfProducts[3]}</span>
@@ -19,7 +19,7 @@ export function toCreateContainersData(...dataOfProducts){
 
     const containerDeleteIconAP=document.createElement("div")
     containerDeleteIconAP.className="containerDeleteIconAP"
-    containerDeleteIconAP.innerHTML=`<img class="imgDeleteIconAP" src="../../assets/pages/administratorPage/deleteIcon.png" alt="">`
+    containerDeleteIconAP.innerHTML=`<img class="imgDeleteIconAP" src="../../assets/pages/administratorPage/deleteIcon.png" alt="" >`
     
 
 
