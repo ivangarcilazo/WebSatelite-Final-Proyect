@@ -29,4 +29,5 @@ export function toCreateContainersData(...dataOfProducts){
 
     containerDataProductsAP.appendChild(containerDeleteIconAP)
 
+   
 }

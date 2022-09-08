@@ -13,6 +13,7 @@ import { addDataPopUp } from "./helpers/popUpDataFunctions.js";
 
 
 
+
 for(const objects of cartId){
     objects.addEventListener('click', generatePopUpCart) //para todos cada uno de esos objetos, un evento    
     objects.addEventListener('click', addDataPopUp) 
@@ -20,4 +21,3 @@ for(const objects of cartId){
 
 closePopUpProducts.addEventListener('click', closePopUp )
 
-shippingCalc()

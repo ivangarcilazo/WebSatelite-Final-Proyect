@@ -8,10 +8,10 @@ import { titlePopUpId } from "../Data/popUpData.js";
 
 import { containerDataProductId } from "../Data/merchData.js";
 
-
-
 //Función que agrega la información al popUp
 export function addDataPopUp(){
+
+  
 
     for(const child of containerProductCard){
 

@@ -32,9 +32,11 @@ export function sendFormAp(){
         sentForm.className=""
         sentForm.innerHTML='<span class="checkSimbolSubmit"></span>'
     }else{
-        newProducts.push(new Products(UserPicture, idElement.value, selectGarment, UserSize, UserPrice.value))
+        newProducts.push(new Products(UserPicture, idElement.value, selectGarment, UserSize, UserPrice.value))//carga los valores en el array
         sentForm.className="animationSent"
         sentForm.innerHTML='<span class="checkSimbolSubmit">✔️</span>'
+
+        localStorage.setItem('Products', JSON.stringify(newProducts)) //los suma a los ya creados
 
         toShowData()
 

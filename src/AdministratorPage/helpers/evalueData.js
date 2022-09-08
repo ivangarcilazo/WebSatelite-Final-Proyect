@@ -7,7 +7,7 @@ export function evalueData(){
 
     const messageRetry=document.querySelector("#retryIdMessage")
     newProducts.some((id)=>id.id==idElement.value)?
-      messageRetry.innerHTML="<strong class='messageRetry'>ID repeated</strong>"
+      messageRetry.innerHTML="<strong class='messageRetry'>This id exists</strong>"
       :
       messageRetry.innerHTML="<strong class='messageRetry'></strong>"
     

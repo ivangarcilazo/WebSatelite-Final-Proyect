@@ -1,4 +1,4 @@
-
+import { loadDefProducts } from "./helpers/functionLoadProducts/loadDefProducts.js"
 
 import { evalueData } from "./helpers/evalueData.js"
 import { sendFormAp } from "./helpers/sendFormAp.js"
@@ -17,7 +17,8 @@ export const formAP=document.querySelector('#formAP')
 formAP.addEventListener('click', sendFormAp)
 
 
-
+//Cuando carga la página cargan los productos
+window.addEventListener('load', loadDefProducts)
 
 
 

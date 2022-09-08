@@ -1,0 +1,44 @@
+{
+    "1":{
+        "picture":"../assets/pages/merchandising/products/nave-1.png",
+        "id":"1",
+        "garment":"sweater",
+        "title":"Swater Space Logo",
+        "price":"250"
+    },
+    "2":{
+        "picture":"../assets/pages/merchandising/products/nave-2.png",
+        "id":"2",
+        "garment":"sweater",
+        "title":"Swater Black Logo",
+        "price":"199"
+    },
+    "3":{
+        "picture":"../assets/pages/merchandising/products/nave-3.png",
+        "id":"3",
+        "garment":"sweater",
+        "title":"Swater NASA Gray",
+        "price":"199"
+    },
+    "4":{
+        "picture":"../assets/pages/merchandising/products/remera-1.png",
+        "id":"4",
+        "garment":"t-shirt",
+        "title":"T-Shirt Logo",
+        "price":"150"
+    },
+    "5":{
+        "picture":"../assets/pages/merchandising/products/remera-2.png",
+        "id":"5",
+        "garment":"t-shirt",
+        "title":"T-Shirt Red Logo",
+        "price":"135"
+    },
+    "6":{
+        "picture":"../assets/pages/merchandising/products/remera-3.png",
+        "id":"6",
+        "garment":"t-shirt",
+        "title":"T-Shirt Black Logo",
+        "price":"180"
+    }
+}

@@ -1,4 +1,7 @@
+
+
 import { imagesInfoIdx } from "./Data/imageInfo.js";
+
 
 for(const images of imagesInfoIdx){
 
@@ -12,4 +15,3 @@ for(const images of imagesInfoIdx){
     })
    
 }
-  
