@@ -604,9 +604,6 @@ body {
         .bgMain .popUpProducts .containerInfoCart .containerInfoProductPopUP #priceProductPopUp {
           font-weight: bold;
           font-size: 2.3vw; }
-        .bgMain .popUpProducts .containerInfoCart .containerInfoProductPopUP #ShippingTimePopUp {
-          color: #02A751;
-          font-weight: bold; }
       .bgMain .popUpProducts .containerInfoCart #buttonAddToCartPopUp {
         width: 90%;
         height: 5vw;
@@ -873,6 +870,13 @@ body {
         .containerDisplayCartMerch .alingProductsCartMerch .containterProductCartMerch .containerDeleteProductCartMerch img {
           width: 5vw;
           cursor: pointer; }
+  .containerDisplayCartMerch .buyNowButtonCart {
+    background-color: white;
+    border: none;
+    padding: 0.5vw;
+    border-radius: 0.3vw;
+    font-weight: bold;
+    cursor: pointer; }
 
 .closeCartMerch {
   display: none; }

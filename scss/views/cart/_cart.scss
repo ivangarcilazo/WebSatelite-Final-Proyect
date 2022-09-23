@@ -126,6 +126,16 @@
             }
         }
     }
+    .buyNowButtonCart{
+        background-color: white;
+        border: none;
+        padding: 0.5vw;
+        border-radius: 0.3vw;
+        
+        font-weight: bold;
+
+        cursor: pointer;
+    }
 }
 .closeCartMerch{
     display: none;

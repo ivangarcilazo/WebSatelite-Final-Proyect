@@ -50,5 +50,20 @@ export const loadElementsCartMerch=()=>{
         deleteElemetsCart()
         
     }
+
+    document.querySelector("#buyNowButtonCart").addEventListener('click', ()=>{
+        Swal.fire({
+            title:"¡Thanks for explore my proyect!",
+            html:`Visit my <a href="https://github.com/ivangarcilazo">GitHub</a> for more!`,
+            background:'white',
+            color:'black',
+            backdrop: `
+            rgba(0,0,123,0.4)
+            url("https://c.tenor.com/sbe0q-jbRqgAAAAC/jack-stauber-inchman.gif")
+            left top
+            no-repeat
+          `
+        })
+    })
    
 }
