@@ -1,44 +1,75 @@
 {
     "1":{
+        "title":"Swater Space Logo",
         "picture":"../assets/pages/merchandising/products/nave-1.png",
         "id":"1",
         "garment":"sweater",
-        "title":"Swater Space Logo",
+        "size":"L",
         "price":"250"
     },
     "2":{
+        "title":"Swater Black Logo",
         "picture":"../assets/pages/merchandising/products/nave-2.png",
         "id":"2",
         "garment":"sweater",
-        "title":"Swater Black Logo",
+        "size":["L"],
         "price":"199"
     },
     "3":{
+        "title":"Swater NASA Gray",
         "picture":"../assets/pages/merchandising/products/nave-3.png",
         "id":"3",
         "garment":"sweater",
-        "title":"Swater NASA Gray",
+        "size":"L",
         "price":"199"
     },
     "4":{
+        "title":"T-Shirt Logo",
         "picture":"../assets/pages/merchandising/products/remera-1.png",
         "id":"4",
         "garment":"t-shirt",
-        "title":"T-Shirt Logo",
+        "size":"L",
         "price":"150"
     },
     "5":{
+        "title":"T-Shirt Red Logo",
         "picture":"../assets/pages/merchandising/products/remera-2.png",
         "id":"5",
         "garment":"t-shirt",
-        "title":"T-Shirt Red Logo",
+        "size":"L",
         "price":"135"
     },
     "6":{
+        "title":"T-Shirt Black Logo",
         "picture":"../assets/pages/merchandising/products/remera-3.png",
         "id":"6",
         "garment":"t-shirt",
-        "title":"T-Shirt Black Logo",
+        "size":"L",
         "price":"180"
+    },
+    "7":{
+        "title":"T-Shirt James WEB Yellow",
+        "picture":"../assets/pages/merchandising/products/remera-JW.png",
+        "id":"7",
+        "garment":"t-shirt",
+        "size":"XL",
+        "price":"260"
+    },
+    "8":{
+        "title":"T-Shirt James WEB Blue",
+        "picture":"../assets/pages/merchandising/products/remera-JW2-P.png",
+        "id":"8",
+        "garment":"t-shirt",
+        "size":"S",
+        "price":"260"
+    },
+    "9":{
+        "title":"T-Shirt Hubble Black",
+        "picture":"../assets/pages/merchandising/products/REMERA-HB-P.png",
+        "id":"9",
+        "garment":"t-shirt",
+        "size":"S",
+        "price":"260"
     }
+    
 }

@@ -2,7 +2,7 @@ import { idElement } from "../Data/ToEvalue.js"
 import { UserPrice } from "../Data/ToEvalue.js"
 import { newProducts } from "../Data/ProductsToAdd.js"
 
-//Evalua la información y devuelve si es correcta o no
+//Evalua la información del formulario y devuelve si es correcta o no
 export function evalueData(){
 
     const messageRetry=document.querySelector("#retryIdMessage")

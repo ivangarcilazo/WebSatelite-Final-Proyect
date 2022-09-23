@@ -1,5 +1,5 @@
 
-
+import { loadDefProducts } from "../AdministratorPage/helpers/functionLoadProducts/loadDefProducts.js";
 import { imagesInfoIdx } from "./Data/imageInfo.js";
 
 
@@ -15,3 +15,6 @@ for(const images of imagesInfoIdx){
     })
    
 }
+
+//Cuando carga la página cargan los productos
+window.addEventListener('load', loadDefProducts)

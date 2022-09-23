@@ -1,14 +1,14 @@
 {
   "name": "web-de-satelites",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto Final coderHouse 2022 Javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Ivan Lautaro Garcilazo",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1",

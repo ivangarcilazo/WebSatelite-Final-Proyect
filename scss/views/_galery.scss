@@ -1,7 +1,4 @@
-.SST{
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+
 
     .sectionGalery{
         display: flex;
@@ -106,7 +103,7 @@
             }
             .containerImgInfo-8{
                 @extend .containerImgInfo;
-               background-image: url("../assets/pages/galery/JamesWeb/62450424_401.jpg");
+               background-image: url("../assets/pages/galery/JamesWeb/cielosYValles.png");
             }
     
             img{
@@ -124,5 +121,5 @@
         }
     
     }
-}
+
 

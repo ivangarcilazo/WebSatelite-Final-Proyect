@@ -105,7 +105,7 @@ body {
       background-size: cover;
       background-position: center;
       width: 100%;
-      height: 33vh;
+      height: 50vh;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -160,7 +160,7 @@ body {
         width: 100%;
         height: 100%;
         z-index: 1;
-        filter: blur(100px);
+        filter: blur(30px);
         transition: all 0.6s; }
       .sst .infoSateliteIdx .containerInfoJamesWeb:hover .hoverEffect, .sst .infoSateliteIdx .containerInfoHubble:hover .hoverEffect {
         opacity: 0;
@@ -192,83 +192,79 @@ body {
       width: 50%;
       height: 80vh; }
 
-.SST {
+.sectionGalery {
+  display: flex;
+  align-items: center;
+  transition: all 0.6s;
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll; }
-  .SST .sectionGalery {
-    display: flex;
-    align-items: center;
+  scroll-snap-align: center; }
+  .sectionGalery .titleGalery {
+    position: absolute;
+    color: white;
+    font-size: 9vw;
+    margin-left: 1vw;
     transition: all 0.6s;
-    height: 100vh;
-    scroll-snap-align: center; }
-    .SST .sectionGalery .titleGalery {
-      position: absolute;
-      color: white;
-      font-size: 9vw;
-      margin-left: 1vw;
-      transition: all 0.6s;
-      z-index: 10; }
-    .SST .sectionGalery:hover .titleGalery {
-      transform: translate(0vw, -15vw);
-      font-size: 5vw; }
-    .SST .sectionGalery .containerGalery {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      overflow-x: hidden; }
-      .SST .sectionGalery .containerGalery .containerImgInfo, .SST .sectionGalery .containerGalery .containerImgInfo-2, .SST .sectionGalery .containerGalery .containerImgInfo-3, .SST .sectionGalery .containerGalery .containerImgInfo-4, .SST .sectionGalery .containerGalery .containerImgInfo-5, .SST .sectionGalery .containerGalery .containerImgInfo-6, .SST .sectionGalery .containerGalery .containerImgInfo-7, .SST .sectionGalery .containerGalery .containerImgInfo-8 {
-        overflow-y: hidden;
-        background-image: url("../assets/pages/galery/Hubble/01-hubble-heic1501a.jpg");
-        height: 100vh;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        filter: grayscale(90%);
-        transition: all  0.3s; }
-        .SST .sectionGalery .containerGalery .containerImgInfo .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-2 .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-3 .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-4 .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-5 .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-6 .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-7 .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-8 .containerInfo {
-          visibility: hidden;
-          align-self: flex-end;
-          background: black;
-          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.689513) 22%, black 97%, black 100%);
-          height: 0vw;
-          padding-top: 2.5vw;
-          padding-left: 2vw;
-          padding-right: 2vw;
-          transition: all 0.3s; }
-          .SST .sectionGalery .containerGalery .containerImgInfo .containerInfo h2, .SST .sectionGalery .containerGalery .containerImgInfo-2 .containerInfo h2, .SST .sectionGalery .containerGalery .containerImgInfo-3 .containerInfo h2, .SST .sectionGalery .containerGalery .containerImgInfo-4 .containerInfo h2, .SST .sectionGalery .containerGalery .containerImgInfo-5 .containerInfo h2, .SST .sectionGalery .containerGalery .containerImgInfo-6 .containerInfo h2, .SST .sectionGalery .containerGalery .containerImgInfo-7 .containerInfo h2, .SST .sectionGalery .containerGalery .containerImgInfo-8 .containerInfo h2 {
-            color: white; }
-          .SST .sectionGalery .containerGalery .containerImgInfo .containerInfo p, .SST .sectionGalery .containerGalery .containerImgInfo-2 .containerInfo p, .SST .sectionGalery .containerGalery .containerImgInfo-3 .containerInfo p, .SST .sectionGalery .containerGalery .containerImgInfo-4 .containerInfo p, .SST .sectionGalery .containerGalery .containerImgInfo-5 .containerInfo p, .SST .sectionGalery .containerGalery .containerImgInfo-6 .containerInfo p, .SST .sectionGalery .containerGalery .containerImgInfo-7 .containerInfo p, .SST .sectionGalery .containerGalery .containerImgInfo-8 .containerInfo p {
-            color: white; }
-        .SST .sectionGalery .containerGalery .containerImgInfo:hover, .SST .sectionGalery .containerGalery .containerImgInfo-2:hover, .SST .sectionGalery .containerGalery .containerImgInfo-3:hover, .SST .sectionGalery .containerGalery .containerImgInfo-4:hover, .SST .sectionGalery .containerGalery .containerImgInfo-5:hover, .SST .sectionGalery .containerGalery .containerImgInfo-6:hover, .SST .sectionGalery .containerGalery .containerImgInfo-7:hover, .SST .sectionGalery .containerGalery .containerImgInfo-8:hover {
-          width: 40vw;
-          z-index: 5;
-          filter: grayscale(0%); }
-        .SST .sectionGalery .containerGalery .containerImgInfo:hover .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-2:hover .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-3:hover .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-4:hover .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-5:hover .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-6:hover .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-7:hover .containerInfo, .SST .sectionGalery .containerGalery .containerImgInfo-8:hover .containerInfo {
-          visibility: visible;
-          height: 11vw; }
-      .SST .sectionGalery .containerGalery .containerImgInfo-2 {
-        background-image: url("../assets/pages/galery/Hubble/04-hubble-heic1307a.jpg"); }
-      .SST .sectionGalery .containerGalery .containerImgInfo-3 {
-        background-image: url("../assets/pages/galery/Hubble/1366_2000.jpg"); }
-      .SST .sectionGalery .containerGalery .containerImgInfo-4 {
-        background-image: url("../assets/pages/galery/Hubble/Nebulosa-NGC-captada-Hubble_1348975254_104689434_1200x675.jpg"); }
-      .SST .sectionGalery .containerGalery .containerImgInfo-5 {
-        background-image: url("../assets/pages/galery/JamesWeb/quinteto-de-stephan_ec9d4487_2000x1917.jpg"); }
-      .SST .sectionGalery .containerGalery .containerImgInfo-6 {
-        background-image: url("../assets/pages/galery/JamesWeb/main_image_deep_field_smacs0723-5mb.jpg"); }
-      .SST .sectionGalery .containerGalery .containerImgInfo-7 {
-        background-image: url("../assets/pages/galery/JamesWeb/MU7OZ7SZ2NG2ZEKY5HAMHSLADY.jpg"); }
-      .SST .sectionGalery .containerGalery .containerImgInfo-8 {
-        background-image: url("../assets/pages/galery/JamesWeb/62450424_401.jpg"); }
-      .SST .sectionGalery .containerGalery img {
-        width: 25vw;
-        height: 100vh;
-        object-fit: cover;
-        transition: all 0.3s;
-        cursor: pointer; }
-        .SST .sectionGalery .containerGalery img:hover {
-          width: 40vw; }
+    z-index: 10; }
+  .sectionGalery:hover .titleGalery {
+    transform: translate(0vw, -15vw);
+    font-size: 5vw; }
+  .sectionGalery .containerGalery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-x: hidden; }
+    .sectionGalery .containerGalery .containerImgInfo, .sectionGalery .containerGalery .containerImgInfo-2, .sectionGalery .containerGalery .containerImgInfo-3, .sectionGalery .containerGalery .containerImgInfo-4, .sectionGalery .containerGalery .containerImgInfo-5, .sectionGalery .containerGalery .containerImgInfo-6, .sectionGalery .containerGalery .containerImgInfo-7, .sectionGalery .containerGalery .containerImgInfo-8 {
+      overflow-y: hidden;
+      background-image: url("../assets/pages/galery/Hubble/01-hubble-heic1501a.jpg");
+      height: 100vh;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      filter: grayscale(90%);
+      transition: all  0.3s; }
+      .sectionGalery .containerGalery .containerImgInfo .containerInfo, .sectionGalery .containerGalery .containerImgInfo-2 .containerInfo, .sectionGalery .containerGalery .containerImgInfo-3 .containerInfo, .sectionGalery .containerGalery .containerImgInfo-4 .containerInfo, .sectionGalery .containerGalery .containerImgInfo-5 .containerInfo, .sectionGalery .containerGalery .containerImgInfo-6 .containerInfo, .sectionGalery .containerGalery .containerImgInfo-7 .containerInfo, .sectionGalery .containerGalery .containerImgInfo-8 .containerInfo {
+        visibility: hidden;
+        align-self: flex-end;
+        background: black;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.689513) 22%, black 97%, black 100%);
+        height: 0vw;
+        padding-top: 2.5vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        transition: all 0.3s; }
+        .sectionGalery .containerGalery .containerImgInfo .containerInfo h2, .sectionGalery .containerGalery .containerImgInfo-2 .containerInfo h2, .sectionGalery .containerGalery .containerImgInfo-3 .containerInfo h2, .sectionGalery .containerGalery .containerImgInfo-4 .containerInfo h2, .sectionGalery .containerGalery .containerImgInfo-5 .containerInfo h2, .sectionGalery .containerGalery .containerImgInfo-6 .containerInfo h2, .sectionGalery .containerGalery .containerImgInfo-7 .containerInfo h2, .sectionGalery .containerGalery .containerImgInfo-8 .containerInfo h2 {
+          color: white; }
+        .sectionGalery .containerGalery .containerImgInfo .containerInfo p, .sectionGalery .containerGalery .containerImgInfo-2 .containerInfo p, .sectionGalery .containerGalery .containerImgInfo-3 .containerInfo p, .sectionGalery .containerGalery .containerImgInfo-4 .containerInfo p, .sectionGalery .containerGalery .containerImgInfo-5 .containerInfo p, .sectionGalery .containerGalery .containerImgInfo-6 .containerInfo p, .sectionGalery .containerGalery .containerImgInfo-7 .containerInfo p, .sectionGalery .containerGalery .containerImgInfo-8 .containerInfo p {
+          color: white; }
+      .sectionGalery .containerGalery .containerImgInfo:hover, .sectionGalery .containerGalery .containerImgInfo-2:hover, .sectionGalery .containerGalery .containerImgInfo-3:hover, .sectionGalery .containerGalery .containerImgInfo-4:hover, .sectionGalery .containerGalery .containerImgInfo-5:hover, .sectionGalery .containerGalery .containerImgInfo-6:hover, .sectionGalery .containerGalery .containerImgInfo-7:hover, .sectionGalery .containerGalery .containerImgInfo-8:hover {
+        width: 40vw;
+        z-index: 5;
+        filter: grayscale(0%); }
+      .sectionGalery .containerGalery .containerImgInfo:hover .containerInfo, .sectionGalery .containerGalery .containerImgInfo-2:hover .containerInfo, .sectionGalery .containerGalery .containerImgInfo-3:hover .containerInfo, .sectionGalery .containerGalery .containerImgInfo-4:hover .containerInfo, .sectionGalery .containerGalery .containerImgInfo-5:hover .containerInfo, .sectionGalery .containerGalery .containerImgInfo-6:hover .containerInfo, .sectionGalery .containerGalery .containerImgInfo-7:hover .containerInfo, .sectionGalery .containerGalery .containerImgInfo-8:hover .containerInfo {
+        visibility: visible;
+        height: 11vw; }
+    .sectionGalery .containerGalery .containerImgInfo-2 {
+      background-image: url("../assets/pages/galery/Hubble/04-hubble-heic1307a.jpg"); }
+    .sectionGalery .containerGalery .containerImgInfo-3 {
+      background-image: url("../assets/pages/galery/Hubble/1366_2000.jpg"); }
+    .sectionGalery .containerGalery .containerImgInfo-4 {
+      background-image: url("../assets/pages/galery/Hubble/Nebulosa-NGC-captada-Hubble_1348975254_104689434_1200x675.jpg"); }
+    .sectionGalery .containerGalery .containerImgInfo-5 {
+      background-image: url("../assets/pages/galery/JamesWeb/quinteto-de-stephan_ec9d4487_2000x1917.jpg"); }
+    .sectionGalery .containerGalery .containerImgInfo-6 {
+      background-image: url("../assets/pages/galery/JamesWeb/main_image_deep_field_smacs0723-5mb.jpg"); }
+    .sectionGalery .containerGalery .containerImgInfo-7 {
+      background-image: url("../assets/pages/galery/JamesWeb/MU7OZ7SZ2NG2ZEKY5HAMHSLADY.jpg"); }
+    .sectionGalery .containerGalery .containerImgInfo-8 {
+      background-image: url("../assets/pages/galery/JamesWeb/cielosYValles.png"); }
+    .sectionGalery .containerGalery img {
+      width: 25vw;
+      height: 100vh;
+      object-fit: cover;
+      transition: all 0.3s;
+      cursor: pointer; }
+      .sectionGalery .containerGalery img:hover {
+        width: 40vw; }
 
 .loginSection {
   background: #6d78da;
@@ -337,7 +333,6 @@ body {
   .BgAdministratorPage .containerViewAP {
     background-color: rgba(0, 0, 0, 0.685);
     width: 37vw;
-    height: 30vw;
     border-radius: 1rem;
     padding: 3vw;
     display: flex;
@@ -422,7 +417,8 @@ body {
     transform: scale(0);
     visibility: visible; } }
   .BgAdministratorPage .containerProductsView {
-    height: 90vh;
+    padding-top: 1vw;
+    height: 85vh;
     background-color: rgba(0, 0, 0, 0.685);
     width: 30%;
     align-self: flex-end;
@@ -434,24 +430,28 @@ body {
       color: white;
       font-size: 2vw;
       margin-bottom: 1vw; }
-    .BgAdministratorPage .containerProductsView .containerFilterProductsAP .indicatorContainersAP {
-      margin-left: 1vw;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      gap: 1.5vw; }
-      .BgAdministratorPage .containerProductsView .containerFilterProductsAP .indicatorContainersAP span {
-        color: white;
-        font-size: 1.5vw; }
-    .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP {
-      margin-top: 1vw;
-      background-color: white;
-      padding: 1vw;
-      border-radius: 1vw;
-      animation-name: resizeDataContainer;
-      animation-iteration-count: 1;
-      animation-duration: 0.6s;
-      animation-timing-function: ease; }
+    .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP {
+      overflow-y: scroll;
+      height: 70vh; }
+      .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP::-webkit-scrollbar {
+        background: rgba(0, 0, 0, 0);
+        width: 0.5vw;
+        padding: 0.2vw;
+        border-radius: 1vw; }
+      .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 1vw;
+        width: 0.4vw; }
+      .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP {
+        margin-top: 1vw;
+        margin: 1vw;
+        background-color: white;
+        padding: 0.5vw;
+        border-radius: 1vw;
+        animation-name: resizeDataContainer;
+        animation-iteration-count: 1;
+        animation-duration: 0.6s;
+        animation-timing-function: ease; }
 
 @keyframes resizeDataContainer {
   from {
@@ -463,31 +463,74 @@ body {
     height: 5.8vw;
     width: 20vw;
     opacity: 1; } }
-      .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .dataProductsAP {
-        position: relative;
-        margin-left: 1vw;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 1.5vw; }
-        .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .dataProductsAP span {
-          color: black;
-          font-size: 1.5vw; }
-      .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .containerDeleteIconAP {
-        display: flex;
-        justify-content: end; }
-        .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .containerDeleteIconAP .imgDeleteIconAP {
-          width: 1.5vw;
-          cursor: pointer; }
+
+@keyframes confirmAnimation {
+  from {
+    visibility: visible;
+    height: 5.8vw;
+    width: 20vw;
+    opacity: 1; }
+  to {
+    visibility: hidden;
+    height: 0vw;
+    width: 0vw;
+    opacity: 0; } }
+        .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .dataProductsAP {
+          position: relative;
+          margin-left: 1vw;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column; }
+          .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .dataProductsAP .titleProductAP {
+            font-weight: bold;
+            margin-bottom: 0.5vw; }
+          .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .dataProductsAP .containerImgDataProductAP {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 1.5vw; }
+            .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .dataProductsAP .containerImgDataProductAP span {
+              color: black;
+              font-size: 1.3vw; }
+            .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .dataProductsAP .containerImgDataProductAP .imgOfProductsAP {
+              width: 6.5vw;
+              border-radius: 0.8vw; }
+            .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .dataProductsAP .containerImgDataProductAP div {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center; }
+              .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .dataProductsAP .containerImgDataProductAP div .indicatorDataAP {
+                font-size: 1vw; }
+        .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .containerDeleteIconAP {
+          display: flex;
+          justify-content: end; }
+          .BgAdministratorPage .containerProductsView .containerFilterProductsAP #alingDataProductsAP .containerDataProductsAP .containerDeleteIconAP .imgDeleteIconAP {
+            width: 1.5vw;
+            cursor: pointer; }
+    .BgAdministratorPage .containerProductsView #confirmMerchAdded {
+      cursor: pointer;
+      border: white;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      padding-top: 0.3vw;
+      padding-bottom: 0.3vw;
+      border-radius: 0.3vw;
+      background-color: white;
+      font-weight: 400;
+      font-size: 1vw; }
 
 .bgMain {
-  background-image: url("../assets/pages/merchandising/bgMain/HuGGeENt6kGyixe3hT9tnY.jpg");
+  background-image: url("../assets/pages/galery/Hubble/04-hubble-heic1307a.jpg");
   background-position: center;
-  background-attachment: fixed;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 5vw; }
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+  flex-direction: column;
+  padding-bottom: 2vw;
+  height: 100vh; }
   .bgMain .popUpProducts {
     width: 55vw;
     height: 45vw;
@@ -495,8 +538,6 @@ body {
     position: fixed;
     z-index: 10;
     border-radius: 1rem;
-    transform: translate(0%, -10%);
-    display: none;
     display: flex;
     align-items: center;
     opacity: 1;
@@ -580,18 +621,110 @@ body {
         cursor: pointer; }
   .bgMain .closeDisplay {
     display: none; }
+  .bgMain .selectionAndLoginMerch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.747);
+    box-shadow: -1px 3px 13px -3px rgba(255, 255, 255, 0.81);
+    -webkit-box-shadow: -1px 3px 13px -3px rgba(255, 255, 255, 0.81);
+    -moz-box-shadow: -1px 3px 13px -3px rgba(255, 255, 255, 0.81);
+    backdrop-filter: blur(6px);
+    width: 95vw;
+    height: 5vw;
+    padding: 0.5vw;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    gap: 5vw; }
+    .bgMain .selectionAndLoginMerch .containerFiltersMerch {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      gap: 3vw; }
+      .bgMain .selectionAndLoginMerch .containerFiltersMerch:nth-child(1) {
+        color: white;
+        font-weight: bold; }
+        .bgMain .selectionAndLoginMerch .containerFiltersMerch:nth-child(1) input {
+          border: none;
+          padding: 0.2vw; }
+      .bgMain .selectionAndLoginMerch .containerFiltersMerch #filterPriceBtnInput {
+        background-color: rgba(124, 43, 255, 0.81);
+        box-shadow: -1px 3px 13px -3px rgba(255, 255, 255, 0.81);
+        -webkit-box-shadow: -1px 3px 13px -3px rgba(255, 255, 255, 0.81);
+        -moz-box-shadow: -1px 3px 13px -3px rgba(255, 255, 255, 0.81);
+        color: white;
+        border: rgba(124, 43, 255, 0.81);
+        padding: 0.3vw;
+        border-radius: 0.3vw;
+        font-weight: bold;
+        cursor: pointer; }
+      .bgMain .selectionAndLoginMerch .containerFiltersMerch #filterPriceBtnInput:disabled {
+        background-color: rgba(206, 175, 255, 0.81);
+        color: gray; }
+      .bgMain .selectionAndLoginMerch .containerFiltersMerch .containerSearchMerch {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2vw; }
+        .bgMain .selectionAndLoginMerch .containerFiltersMerch .containerSearchMerch input {
+          border: none;
+          padding: 0.2vw;
+          border-radius: 0.2vw; }
+    .bgMain .selectionAndLoginMerch .containerLoginMerch a {
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      border-radius: .4vw;
+      padding: 0.4vw;
+      padding-left: 0.2vw;
+      padding-right: 0.2vw;
+      font-weight: bold; }
+    .bgMain .selectionAndLoginMerch .containerCartLoginMerch {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2vw; }
+      .bgMain .selectionAndLoginMerch .containerCartLoginMerch .loggOutMerchIMG {
+        width: 2vw;
+        cursor: pointer;
+        border-radius: 0.3vw; }
+      .bgMain .selectionAndLoginMerch .containerCartLoginMerch .containerCartMerch {
+        cursor: pointer;
+        width: 3vw;
+        height: 3vw;
+        background-color: black;
+        border-radius: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -1px 2px 13px -3px rgba(255, 255, 255, 0.81);
+        -webkit-box-shadow: -1px 2px 13px -3px rgba(255, 255, 255, 0.81);
+        -moz-box-shadow: -1px 2px 13px -3px rgba(255, 255, 255, 0.81); }
+        .bgMain .selectionAndLoginMerch .containerCartLoginMerch .containerCartMerch img {
+          width: 2vw; }
   .bgMain .containerProducts {
-    position: relative;
     padding: 2vw;
     width: 95vw;
+    height: 100vh;
+    overflow-y: scroll;
     background-color: rgba(0, 0, 0, 0.747);
-    border-radius: 1rem;
+    box-shadow: -1px 3px 13px -3px rgba(255, 255, 255, 0.81);
+    -webkit-box-shadow: -1px 3px 13px -3px rgba(255, 255, 255, 0.81);
+    -moz-box-shadow: -1px 3px 13px -3px rgba(255, 255, 255, 0.81);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     backdrop-filter: blur(6px);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 3.5vw; }
+    .bgMain .containerProducts::-webkit-scrollbar {
+      background-color: rgba(0, 0, 0, 0.747);
+      width: 0.5vw;
+      border-radius: 1vw; }
+    .bgMain .containerProducts::-webkit-scrollbar-thumb {
+      background-color: white;
+      border-radius: 0.5vw; }
     .bgMain .containerProducts .containerProductCard {
       background-color: black;
       height: 23vw;
@@ -648,8 +781,101 @@ body {
             -webkit-box-shadow: -1px 2px 45px -3px rgba(124, 43, 255, 0.81);
             -moz-box-shadow: -1px 2px 45px -3px rgba(124, 43, 255, 0.81);
             cursor: pointer; }
+    .bgMain .containerProducts .filterDataProducts {
+      display: none; }
   .bgMain .blurContainerProducts {
     filter: blur(6px); }
+
+.containerToCenterPUCartMerch {
+  display: flex;
+  justify-content: center; }
+
+.containerDisplayCartMerch {
+  position: fixed;
+  z-index: 8;
+  background-color: #2b2b2b;
+  width: 65vw;
+  height: 40vw;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .containerDisplayCartMerch .containerCartTitleMerch {
+    display: flex;
+    gap: 30vw;
+    align-items: center; }
+    .containerDisplayCartMerch .containerCartTitleMerch h3 {
+      font-size: 3vw;
+      color: white; }
+    .containerDisplayCartMerch .containerCartTitleMerch .containerCloseCartMerch {
+      background-color: rgba(255, 255, 255, 0.753);
+      width: 3vw;
+      height: 3vw;
+      border-radius: 5vw; }
+      .containerDisplayCartMerch .containerCartTitleMerch .containerCloseCartMerch img {
+        cursor: pointer;
+        width: 3vw;
+        height: 3vw; }
+  .containerDisplayCartMerch .alingProductsCartMerch {
+    height: 30vw;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 1vw; }
+    .containerDisplayCartMerch .alingProductsCartMerch::-webkit-scrollbar {
+      background-color: rgba(255, 255, 255, 0);
+      height: 0.5vw; }
+    .containerDisplayCartMerch .alingProductsCartMerch::-webkit-scrollbar-thumb {
+      background-color: white;
+      border-radius: 1vw; }
+    .containerDisplayCartMerch .alingProductsCartMerch .containterProductCartMerch {
+      scroll-snap-align: center;
+      position: relative;
+      background-color: white;
+      width: 100%;
+      height: 12vw;
+      border-radius: 2vw;
+      display: flex;
+      padding: 0.5vw; }
+      .containerDisplayCartMerch .alingProductsCartMerch .containterProductCartMerch img {
+        margin-left: 3vw;
+        width: 10vw; }
+      .containerDisplayCartMerch .alingProductsCartMerch .containterProductCartMerch .containerDataCartMerch {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        margin-left: 4vw; }
+        .containerDisplayCartMerch .alingProductsCartMerch .containterProductCartMerch .containerDataCartMerch h4 {
+          margin-top: .5vw;
+          font-size: 1.7vw; }
+        .containerDisplayCartMerch .alingProductsCartMerch .containterProductCartMerch .containerDataCartMerch .sizeCartMerch {
+          font-size: 1.3vw;
+          font-weight: 600; }
+        .containerDisplayCartMerch .alingProductsCartMerch .containterProductCartMerch .containerDataCartMerch .containerPriceCartMerch {
+          background-color: #2b2b2b;
+          width: 5vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0.5vw; }
+          .containerDisplayCartMerch .alingProductsCartMerch .containterProductCartMerch .containerDataCartMerch .containerPriceCartMerch .priceCartMerch {
+            font-weight: bolder;
+            font-size: 1.5vw;
+            color: white; }
+      .containerDisplayCartMerch .alingProductsCartMerch .containterProductCartMerch .containerDeleteProductCartMerch {
+        width: 5vw; }
+        .containerDisplayCartMerch .alingProductsCartMerch .containterProductCartMerch .containerDeleteProductCartMerch img {
+          width: 5vw;
+          cursor: pointer; }
+
+.closeCartMerch {
+  display: none; }
 
 .sectionForm {
   height: 100vh;
@@ -689,6 +915,15 @@ body {
         .sectionForm .containerformLogin form .inputLogin:focus, .sectionForm .containerformLoginBlack form .inputLogin:focus {
           background-color: white;
           color: black; }
+    .sectionForm .containerformLogin #loginSubmit, .sectionForm .containerformLoginBlack #loginSubmit {
+      background-color: black;
+      border: none;
+      color: white;
+      font-weight: bold;
+      height: 2vw;
+      justify-self: end;
+      width: 6vw;
+      border-radius: 0.5vw; }
   .sectionForm .containerformLoginBlack {
     background-color: rgba(0, 0, 0, 0.644);
     animation-name: toBlack;
@@ -713,57 +948,12 @@ body {
     color: black; }
   to {
     color: white; } }
-
-.bgRegister {
-  background-image: url("../assets/pages/register/22-225256_476268-title-sci-fi-stars-wallpaper-high-resolution.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.formRegisterBg {
-  height: 100vh;
-  background: black;
-  background: linear-gradient(52deg, rgba(0, 0, 0, 0.73153) 22%, rgba(29, 6, 83, 0.658701) 71%); }
-  .formRegisterBg .containerDataRegister {
-    padding-top: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .formRegisterBg .containerDataRegister h3 {
-      color: white;
-      font-size: 8vw;
-      margin-left: 2vw; }
-    .formRegisterBg .containerDataRegister span {
-      color: white; }
-    .formRegisterBg .containerDataRegister .formRegister {
-      margin-top: 8vw;
-      width: 80vw;
-      display: flex;
-      flex-direction: column; }
-      .formRegisterBg .containerDataRegister .formRegister .containerInputRegister {
-        width: 50%;
-        padding: 1vw; }
-        .formRegisterBg .containerDataRegister .formRegister .containerInputRegister input {
-          width: 100%;
-          border: solid;
-          padding-left: 1vw;
-          font-size: 1.8vw;
-          height: 3vw;
-          border: solid;
-          animation-name: borderAnimation;
-          animation-duration: 1s;
-          animation-timing-function: ease-in;
-          animation-iteration-count: infinite; }
-
-@keyframes borderAnimation {
-  from {
-    border: solid black  0.5px; }
-  to {
-    border: dashed white  0.5px; } }
-        .formRegisterBg .containerDataRegister .formRegister .containerInputRegister label {
-          position: absolute;
-          transform: translate(1vw, 0vw);
-          font-size: 1.8vw; }
-      .formRegisterBg .containerDataRegister .formRegister .inputRegister {
-        height: 3vw; }
+    .sectionForm .containerformLoginBlack #loginSubmit {
+      background-color: white;
+      border: none;
+      color: black;
+      font-weight: bold;
+      height: 2vw;
+      justify-self: end;
+      width: 6vw;
+      border-radius: 0.5vw; }

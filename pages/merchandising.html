@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,165 +12,73 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="">G-Travels</a></li>
                 <li><a href="./galery.html">Galery</a></li>
                 <li><a href="./merchandising.html">Merchandising</a></li>
-                <li><a href="./merchandising/login.html" class="btnAdministratorMerch">Administrator</a></li>
+                <li><a href="./merchandising/loginAP/login.html" class="btnAdministratorMerch">Administrator</a></li>
             </ul>
         </nav>
     </header>
     <main class="bgMain">
-
-        <div class="popUpProducts closeDisplay" id="PopUpProducts"> 
-
-            <img src="" alt="" id="imgPopUpProductsId">
-
-            <div class="containerInfoCart">
-
-                <!-- Contiene cruz para cerrar PopUp -->
-                <div class="containerFlexClosePopUp">
-                    <div class="closePopUp" id="closePopUp">
-                        <div id="child-1"></div>
-                        <div id="child-2"></div>
+        
+        <div class="containerToCenterPUCartMerch">
+            <div class="containerDisplayCartMerch closeCartMerch">
+                <div class="containerCartTitleMerch">
+                    <h3>Your cart:</h3>
+                    <div class="containerCloseCartMerch">
+                        <img src="../assets/pages/merchandising/cart/closebutton.png" alt="" id="closeButtonCartMerch">
                     </div>
                 </div>
-
-                <form action="">
-                    
-                    <h4 id="titlePopUp"></h4>
-
-                    <div class="containerInfoProductPopUP">
-
-                        <div class="containerSizePopUp">
-                            <span>Size: </span>
-                            <select name="" id="">
-                                <option value="">Select Size</option>
-                                <option value="L">L</option>
-                                <option value="XL">XL</option>
-                                <option value="">M</option>
-                                <option value="" disabled>S</option>
-                            </select>
-                        </div>
-                        
-                        <span id="priceProductPopUp">$ 250</span>
+                <div class="alingProductsCartMerch">
+                    <!-- generate -->
+                
+                </div>
     
-                        <span id="ShippingTimePopUp">Shipping free for </span>  
+                <input type="button" value="Buy now" class="buyNowButtonCart">
+            </div>
+        </div>
+
+        <div class="selectionAndLoginMerch">
+            <div class="containerFiltersMerch">
+               
+                    <div>
+                        <label for="">Price Filtering</label>
                         
+                        <div>
+                            <form action="">
+                                <span>$<input type="text" placeholder="Minimun price" id="minimunPriceInput"></span>
+                                <span> - </span>
+                                <input type="text" placeholder="Max Price" id="maxPriceInput">
+                                <input type="button" value="Filter" id="filterPriceBtnInput">
+    
+                            </form>
+                            
+                        </div>
                     </div>
 
-                    <input type="button" value="Add to cart" id="buttonAddToCartPopUp">
-                </form>
+                    <div class="containerSearchMerch">
+                        <label for="searchProductsMerch">Search</label>
+                        <input type="search" name="" id="searchProductsMerch" placeholder="Try 'Swater'">
+                    </div>
 
+
+                
+               
             </div>
 
+            <div class="containerCartLoginMerch" id="containerCartLoginMerch">
+                
+                <div class="containerLoginMerch">
+                    <a id="loginMerchSide" href="../pages/login/login.html">Login</a>
+                </div>
+            </div>
+            
         </div>
 
         <div class="containerProducts " id="containerProducts">
-
-            <div class="containerProductCard">
-                <img src="../assets/pages/merchandising/products/nave-1.png" alt="">
-
-                <div class="containerDataProduct">
-
-                    <div class="containerTextInfo">
-                        <h4 class="titleProductMerch" >Swater Space Logo</h4>
-                        <span class="priceProductMerch">$250</span>
-                    </div>
-                
-                    <div class="radiusCart" id="uno">
-                        <img src="../assets/pages/merchandising/containerInfoProducts/icone-de-panier-noir.png" alt="">
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="containerProductCard">
-                <img src="../assets/pages/merchandising/products/nave-2.png" alt="">
-                
-                <div class="containerDataProduct">
-
-                    <div class="containerTextInfo">
-                        <h4 class="titleProductMerch" >Swater Black Logo</h4>
-                        <span class="priceProductMerch">$199</span>
-                    </div>
-                
-                    <div class="radiusCart">
-                        <img src="../assets/pages/merchandising/containerInfoProducts/icone-de-panier-noir.png" alt="">
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="containerProductCard">
-                <img src="../assets/pages/merchandising/products/nave-3.png" alt="">
-                <div class="containerDataProduct">
-
-                    <div class="containerTextInfo">
-                        <h4 class="titleProductMerch" >Swater NASA Gray</h4>
-                        <span class="priceProductMerch">$199</span>
-                    </div>
-                
-                    <div class="radiusCart">
-                        <img src="../assets/pages/merchandising/containerInfoProducts/icone-de-panier-noir.png" alt="">
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="containerProductCard">
-                <img src="../assets/pages/merchandising/products/remera-1.png" alt="">
-                <div class="containerDataProduct">
-
-                    <div class="containerTextInfo">
-                        <h4 class="titleProductMerch" >T-Shirt Logo</h4>
-                        <span class="priceProductMerch">$150</span>
-                    </div>
-                
-                    <div class="radiusCart">
-                        <img src="../assets/pages/merchandising/containerInfoProducts/icone-de-panier-noir.png" alt="">
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="containerProductCard">
-                    <img src="../assets/pages/merchandising/products/remera-2.png" alt="">
-
-                    <div class="containerDataProduct">
-
-                        <div class="containerTextInfo">
-                            <h4 class="titleProductMerch" >T-Shirt Red Logo</h4>
-                            <span class="priceProductMerch">$135</span>
-                        </div>
-                    
-                        <div class="radiusCart">
-                            <img src="../assets/pages/merchandising/containerInfoProducts/icone-de-panier-noir.png" alt="">
-                        </div>
-                    
-                    </div>
-            </div>
-
-            <div class="containerProductCard">
-                    <img src="../assets/pages/merchandising/products/remera-3.png" alt="">
-                    <div class="containerDataProduct">
-
-                        <div class="containerTextInfo">
-                            <h4 class="titleProductMerch" >T-Shirt Black Logo</h4>
-                            <span class="priceProductMerch">$180</span>
-                        </div>
-                    
-                        <div class="radiusCart">
-                            <img src="../assets/pages/merchandising/containerInfoProducts/icone-de-panier-noir.png" alt="">
-                        </div>
-                        
-                    </div>
-            </div>
-
         </div>
-
-        
     </main>
     
-    <script src="../src/merchandising/merchandising.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../src/merchandising/index.js" type="module"></script>
 </body>
 </html>

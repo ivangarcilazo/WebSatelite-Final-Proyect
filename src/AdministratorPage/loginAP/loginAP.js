@@ -7,7 +7,7 @@ let message=document.querySelector('#messageError')
 
 localStorage.getItem('nombreAdmin')=='admin' && localStorage.getItem('passwordAdmin')=='12345' ?
 
-    window.location.href="./administratorPage.html"
+    window.location.href="../administratorPage.html"
     :
     login.addEventListener('submit', sendForm);
 
@@ -24,7 +24,7 @@ function sendForm(){
         
     
         nombreAdmin=='admin' && passwordAdmin=='12345'?
-            window.location.href="./administratorPage.html" 
+            window.location.href="../administratorPage.html" 
             :
             message.innerHTML='<span class="messageError"><b>Revise los datos introducidos ❌</b></span>'
         

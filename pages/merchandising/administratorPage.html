@@ -26,6 +26,11 @@
             <form action="" class="formContainerInputAp" >
 
                 <div class="containerInputAP">
+                    <span>Title:</span>
+                    <input type="text" id="titleAP">
+                </div>
+
+                <div class="containerInputAP">
                     <span>Picture:</span>
                     <input type="file" accept="image/png, .jpeg, .jpg" id="pictureAP">
                 </div>
@@ -68,27 +73,23 @@
             <h3>Added products </h3>
 
             <div class="containerFilterProductsAP">
-                
-                <div class="indicatorContainersAP">
-                    <span >id</span>
-                    <span>garment</span>
-                    <span>price</span>
-                    <span>size</span>
-                </div>
 
                 <!-- Esto se tiene que generar con js -->
                 <div id="alingDataProductsAP">
-
+                    
                 </div>
                 
-
+                
             </div>
+
+            <input type="submit" value="Confirm" id="confirmMerchAdded">
         </div>
 
     </section>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../../src/AdministratorPage/administratorProducts.js" type="module"></script>
+    <script src="../../src/AdministratorPage/index.js" type="module"></script>
+    
 
 </body>
 </html>

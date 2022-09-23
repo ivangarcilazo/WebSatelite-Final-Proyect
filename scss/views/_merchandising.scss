@@ -1,14 +1,18 @@
 .bgMain{
-    background-image: url("../assets/pages/merchandising/bgMain/HuGGeENt6kGyixe3hT9tnY.jpg");
+    background-image: url("../assets/pages/galery/Hubble/04-hubble-heic1307a.jpg");
 
     background-position: center;
-    background-attachment: fixed;
     display: flex;
-    justify-content: center;
     align-items: center;
 
     padding-top: 5vw;
-    
+    padding-bottom: 1vw;
+
+    flex-direction: column;
+
+    padding-bottom: 2vw;
+
+    height: 100vh;
 
     
     .popUpProducts{
@@ -19,9 +23,6 @@
         z-index: 10;
         border-radius: 1rem;
         
-        transform: translate(0%,-10%);
-        display: none;
-
         display: flex;
         align-items: center;
         opacity: 1;
@@ -142,14 +143,132 @@
         display: none;
     }
 
+    .selectionAndLoginMerch{
+        display: flex;
+        justify-content: space-around   ;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.747);
+        box-shadow: -1px 3px 13px -3px rgba(255,255,255,0.81);
+        -webkit-box-shadow: -1px 3px 13px -3px rgba(255,255,255,0.81);
+        -moz-box-shadow: -1px 3px 13px -3px rgba(255,255,255,0.81);
+        backdrop-filter: blur(6px);
+        width: 95vw;
+        height: 5vw;
+
+        padding: 0.5vw;
+
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        gap:5vw;
+
+        .containerFiltersMerch{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            gap:3vw;
+
+            &:nth-child(1){
+                color: white;
+                font-weight: bold;
+
+                input{
+                    border: none;
+                    padding: 0.2vw;
+
+                }
+            }
+            #filterPriceBtnInput{
+                background-color: rgba(124,43,255,0.81);
+                box-shadow: -1px 3px 13px -3px rgba(255,255,255,0.81);
+                -webkit-box-shadow: -1px 3px 13px -3px rgba(255,255,255,0.81);
+                -moz-box-shadow: -1px 3px 13px -3px rgba(255,255,255,0.81);
+                color: white;
+                border: rgba(124,43,255,0.81);
+                padding: 0.3vw;
+                border-radius: 0.3vw;
+
+                font-weight: bold;
+                cursor: pointer;
+            }
+            #filterPriceBtnInput:disabled{
+                background-color: rgba(206, 175, 255, 0.81);
+                color:gray;
+            }
+
+            .containerSearchMerch{
+                display: flex;
+                flex-direction: column;
+                gap: 0.2vw;
+                
+                input{
+                    border: none;
+                    padding: 0.2vw;
+                    border-radius: 0.2vw;
+                }
+            }
+        }
+
+        .containerLoginMerch{
+            
+            a{
+                background-color: white;
+                color: black;
+                text-decoration: none;
+                border-radius: .4vw;
+                padding: 0.4vw;
+                padding-left:0.2vw ;
+                padding-right: 0.2vw;
+
+                font-weight: bold;
+
+            }
+        }
+        .containerCartLoginMerch{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:2vw;
+
+            .loggOutMerchIMG{
+                width: 2vw;
+                cursor: pointer;
+                border-radius: 0.3vw;
+            }
+            .containerCartMerch{
+            cursor: pointer;
+            width: 3vw;
+            height: 3vw;
+            background-color: black;
+            border-radius: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -1px 2px 13px -3px rgba(255, 255, 255, 0.81);
+            -webkit-box-shadow: -1px 2px 13px -3px rgba(255, 255, 255, 0.81);
+            -moz-box-shadow: -1px 2px 13px -3px rgba(255, 255, 255, 0.81);
+
+            img{
+                width: 2vw;
+            }
+        }
+        }
+       
+    }
+
     .containerProducts{
-        position: relative;
         padding: 2vw;
 
         width: 95vw;
+        height: 100vh;
+        overflow-y: scroll;
+
         background-color: rgba(0, 0, 0, 0.747);
+        box-shadow: -1px 3px 13px -3px rgba(255,255,255,0.81);
+        -webkit-box-shadow: -1px 3px 13px -3px rgba(255,255,255,0.81);
+        -moz-box-shadow: -1px 3px 13px -3px rgba(255,255,255,0.81);
         
-        border-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
         
         backdrop-filter: blur(6px);
 
@@ -159,6 +278,16 @@
         align-items: center;
         gap: 3.5vw;
 
+        &::-webkit-scrollbar{
+            background-color: rgba(0, 0, 0, 0.747) ;
+            width: 0.5vw;
+            border-radius: 1vw;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: white;
+            
+            border-radius: 0.5vw;
+        }
        
         .containerProductCard{
             background-color: black;
@@ -240,6 +369,10 @@
                     }
                 }
             }
+            
+        }
+        .filterDataProducts{
+            display: none;
         }
     }
     .blurContainerProducts{

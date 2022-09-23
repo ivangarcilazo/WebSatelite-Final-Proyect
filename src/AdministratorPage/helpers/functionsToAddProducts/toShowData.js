@@ -7,8 +7,8 @@ export function toShowData(){
         const lastProduct=newProducts.slice(-1) //Muestra el ultimo producto agregado
 
         for(const products of lastProduct){
-            const {id, garment, price, size}= products
-            toCreateContainersData(id, garment, price , size) 
+            const {title, picture, id, garment, price, size}= products
+            toCreateContainersData(title, picture, id, garment, price , size) 
         }
 
 }

@@ -1,7 +1,8 @@
 //Contiene donde se guardan los productos
 
 export class Products{
-    constructor(picture, id, garment, size, price){
+    constructor(title, picture, id, garment, size, price){
+        this.title=title
         this.picture=picture
         this.id=id
         this.garment=garment

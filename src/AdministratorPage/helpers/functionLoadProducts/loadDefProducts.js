@@ -6,7 +6,7 @@ import { newProducts } from "../../Data/ProductsToAdd.js"
 export const loadDefProducts= async ()=>{
 
     if( !localStorage.getItem('firstTimeLoad')){
-
+        
         const productsAPI= await fetch('../../JSON/dataProducts/dataProducts.json')
     
         const data =await productsAPI.json()
