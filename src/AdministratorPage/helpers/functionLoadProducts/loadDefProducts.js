@@ -7,14 +7,14 @@ export const loadDefProducts= async ()=>{
 
     if( !localStorage.getItem('firstTimeLoad')){
         
-        const productsAPI= await fetch('./JSON/dataProducts/dataProducts.json')
-    
-        const data =await productsAPI.json()
+     await fetch('./JSON/dataProducts/dataProducts.json')
+        .then((data)=>data.json())
+        .then((data)=>{
+            Object.entries(data).forEach((key)=>{
+                newProducts.push(key[1])
+            })
+        })  
 
-        Object.entries(data).forEach((key)=>{
-            newProducts.push(key[1])
-        })
-        
         localStorage.setItem('Products', JSON.stringify(newProducts))
 
         localStorage.setItem('firstTimeLoad', true)
