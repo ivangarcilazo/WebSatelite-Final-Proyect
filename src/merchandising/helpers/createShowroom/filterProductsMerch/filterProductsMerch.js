@@ -21,8 +21,6 @@ export const filterProductsMerch=()=>{
             
         const newToShow=elementsToFilter.filter((element)=>((element.lastElementChild.firstElementChild.lastElementChild.innerText)>`$${minPriceUser}`)+((element.lastElementChild.firstElementChild.lastElementChild.innerText)<`$${maxPriceUser}`))
           
-        //PROBLEMA DE LOS NUMEROS CHICOS
-        console.log(newToDelete)
         newToDelete.map((product)=>product.classList.add("filterDataProducts"))
 
         minimunPriceInput.addEventListener('input',()=>{

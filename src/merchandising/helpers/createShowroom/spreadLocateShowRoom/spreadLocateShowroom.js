@@ -9,7 +9,7 @@ import { loadElementsCart } from "../loadElements/loadElementsCart.js"
 //Crea los contenedores donde irán a mostrarse los productos
 
 export const spreadLocateShowRoom=(...dataForShowRoom)=>{
-    console.log(dataForShowRoom)
+
     const containerProductCard=document.createElement("div")
     containerProductCard.className="containerProductCard"
 

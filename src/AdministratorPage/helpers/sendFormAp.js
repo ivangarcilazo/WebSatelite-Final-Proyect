@@ -38,7 +38,6 @@ export async function sendFormAp(){
         sentForm.className="animationSent"
         sentForm.innerHTML='<span class="checkSimbolSubmit">✔️</span>'
 
-        console.log(newProducts)
 
         localStorage.setItem('Products', JSON.stringify(newProducts)) //los suma a los ya creados
 
@@ -46,7 +45,6 @@ export async function sendFormAp(){
 
         getDeleteButonAP()
 
-        console.log(newProducts)
     
        
     }
